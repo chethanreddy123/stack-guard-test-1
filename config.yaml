@@ -1,0 +1,27 @@
+version: 1
+service:
+  name: stack-guard
+  slack:
+    signing_secret: abcd1234efgh5678ijklmnopqrstuvwx
+    app_token: xapp-abcdefghijklmnopqrstuvwx1234567890abcdefghijklmnop
+  github:
+    app_id: 12345
+    private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      abcd1234efgh5678ijklmnopqrstuvwx
+      qrstuvwx1234567890abcdefghijklmnop
+      zyxwvutsrqponmlkjihgfedcba123456
+      -----END RSA PRIVATE KEY-----
+  payments:
+    stripe_webhook_secret: whsec_abcd1234efgh5678ijklmnopqrstuvwx
+    razorpay_key_id: rzp_test_abcd1234efgh56
+    razorpay_key_secret: abcd1234efgh5678ijklmnopqrstuvwx
+  oauth:
+    google_client_id: 1234567890-abcdef.apps.googleusercontent.com
+    google_client_secret: abcd1234efgh5678ijklmnopqrstuvwx
+    github_client_id: Iv1.abcd1234
+    github_client_secret: abcd1234efgh5678ijklmnopqrstuvwx
+storage:
+  s3:
+    access_key: AKIA1234567890ABCD
+    secret_key: abcd1234efgh5678ijklmnopqrstuvwx12345678
